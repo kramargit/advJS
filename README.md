@@ -1,2 +1,0 @@
-# advJS
-Продвинутый курс Javascript
