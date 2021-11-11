@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 урок</title>
+</head>
+
+<body>
+    <script>
+        class Cart {
+            constructor(promoCode, totalPrice, discount, delivery, total) {
+                this.#promoCode = promoCode; // номер промокода
+                this.#totalPrice = totalPrice; // общая цена за все товары без скидки
+                this.discount = discount; // скидка
+                this.#delivery = delivery; // доставка
+                this.#total = total; // общая цена за все товары со скидкой
+            }
+
+            checkout() {
+                //оформление заказа
+            }
+
+            checkPromoCode() {
+                // проверка промокода
+            }
+
+            calculateTotal() {
+                // вычисление итого исходя из общей цены, промокода, скидки, доставки
+            }
+        }
+
+        class ElemCart extends Cart {
+            constructor(discount, selfDiscount, title, type, price, count) {
+                super(discount);
+                this.selfDiscount = selfDiscount;
+                this.title = title;
+                this.type = type;
+                this.price = price;
+                this.count = count;
+            }
+
+            deleteElemCart() {
+                // удаление товара из корзины
+            }
+
+            // к сожалению я не вижу как тут применить принцип полиморфизма
+        }
+    </script>
+</body>
+
+</html>
