@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>2 урок</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-title">Расчет стоимости и калорийности бургера</h1>
+        </header>
+        <main class="content">
+            <form action="#">
+                <fieldset class="input">
+                    <legend>Размер бургера</legend>
+                    <input type="radio" id="smallBurger" name="size" value="small" checked>
+                    <label for="smallBurger">Маленький бургер</label><br />
+                    <input type="radio" id="bigBurger" name="size" value="big">
+                    <label for="bigBurger">Большой бургер</label>
+                </fieldset>
+                <fieldset class="input">
+                    <legend>Выбор начинки</legend>
+                    <input type="checkbox" name="opt1" value="chees" id="chees" checked>
+                    <label for="chees">С сыром</label><br />
+                    <input type="checkbox" name="opt1" value="salad" id="salad">
+                    <label for="salad">С салатом</label><br />
+                    <input type="checkbox" name="opt1" value="potato" id="potato">
+                    <label for="potato">С картофелем</label>
+                </fieldset>
+                <fieldset class="input">
+                    <legend>Дополнительно</legend>
+                    <input type="checkbox" name="opt2" value="seasoning" id="seasoning" checked>
+                    <label for="seasoning">Посыпать приправой</label><br />
+                    <input type="checkbox" name="opt2" value="mayonneis" id="mayonneis">
+                    <label for="mayonneis">Полить майонезом</label>
+                </fieldset>
+                <button class="btn-calc">Расчитать</button>
+            </form>
+            <section class="rezult">
+                <p class="costs">Стоимость бургера: </p>
+                <p class="calories">Объем калорий: </p>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
