@@ -1,0 +1,118 @@
+.footer_bot {
+    background: @bg-footer-bot;
+    padding: 24px 0 0 0;
+    min-height: @h-footer-bot;
+    box-sizing: border-box;
+
+    &_wrap {
+        .wrapper(@width: 75%, @margin: 0 auto, @display: flex);
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    &_left {
+        margin-top: 6px;
+
+        &_text {
+            .text(@style: normal, @weight: normal, @size: 16px,
+             @line-h: 19px, @align: left, @clr: #FBFBFB, @z: 1)
+        }
+    }
+
+    &_right_list {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    &_righ_icons {
+        color: #000;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_righ_facebook {
+        width: @w-footer-bot-righ;
+        height: @h-footer-bot-righ;
+        background-position: 0 0;
+        margin: 0 7.29px 0 0;
+
+        &:hover {
+            width: @w-footer-bot-righ;
+            height: @h-footer-bot-righ;
+            background: #F16D7F;
+            color: #FFF !important;
+        }
+
+    }
+
+    &_righ_instagram {
+        width: @w-footer-bot-righ;
+        height: @h-footer-bot-righ;
+        background-position: -32.45px 0;
+        margin: 0 7.29px 0 0;
+
+        &:hover {
+            width: @w-footer-bot-righ;
+            height: @h-footer-bot-righ;
+            background: #F16D7F;
+            color: #FFF !important;
+        }
+
+    }
+
+    &_righ_pinterest{
+        width: @w-footer-bot-righ;
+        height: @h-footer-bot-righ;
+        background-position: -64.9px 0;
+        margin: 0 7.29px 0 0;
+
+        &:hover {
+            width: @w-footer-bot-righ;
+            height: @h-footer-bot-righ;
+            background: #F16D7F;
+            color: #FFF !important;
+        }
+
+    }
+
+    &_righ_twitter{
+        width: @w-footer-bot-righ;
+        height: @h-footer-bot-righ;
+        background-position: -97.35px 0;
+
+        &:hover {
+            width: @w-footer-bot-righ;
+            height: @h-footer-bot-righ;
+            background: #F16D7F;
+            color: #FFF !important;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer_bot_wrap {
+        width: 100%;
+        padding: 0 32px 0 32px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .footer_bot {
+      padding: 43px 0 0 0;
+    }
+
+    .footer_bot_wrap {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer_bot_left {
+        margin: 40px 0 9px 0;
+    }
+}
