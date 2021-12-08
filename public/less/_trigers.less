@@ -1,0 +1,110 @@
+.trigers {
+    background: @bg-trigers;
+    min-height: @minh-trigers;
+    width: @w-trigers;  
+    box-sizing: border-box;
+    padding: 103px 0 0 0;
+
+    &_wrap {
+        .wrapper(@width: 75%, @margin: 0 auto, @display: flex);
+        box-sizing: border-box;
+    }
+
+    &_general {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_delivery {
+        width: @w-trigers_delivery;
+
+        &_icon {
+            margin: 0 0 28.07px 0;
+            width: @w-trigers_delivery-icon;
+            height: @h-trigers_delivery-icon;
+        }
+
+        &_title {
+            margin: 0 0 16px 0;
+            .text(@style: normal, @weight: normal, @size: 120%,
+             @line-h: 24px, @align: center, @clr: #FBFBFB, @z: 1)
+        }
+
+        &_desc {
+            .text(@style: normal, @weight: 300, @size: 80%,
+             @line-h: 17px, @align: center, @clr: #9f9f9f, @z: 1);
+        }
+
+    }
+
+    &_discount {
+        width: @w-trigers-discounts;
+
+        &_icon {
+            margin: 0 0 19.01px 0;
+            width: @w-trigers-discount-icon;
+            height: @h-trigers-discount-icon;
+        }
+
+        &_title {
+            margin: 0 0 16px 0;
+            .text(@style: normal, @weight: normal, @size: 120%,
+             @line-h: 24px, @align: center, @clr: #FBFBFB, @z: 1);
+        }
+        
+        &_desc {
+            .text(@style: normal, @weight: 300, @size: 80%,
+             @line-h: 17px, @align: center, @clr: #9f9f9f, @z: 1);
+        }
+
+    }
+
+    &_assurance {
+        width: @w-trigers-assurance;
+
+        &_icon {
+            margin: 0 0 25.07px 0;
+            width: @w-trigers-assurance-icon;
+            height: @h-trigers-assurance-icon;
+        }
+
+        &_title {
+            margin: 0 0 16px 0;
+            .text(@style: normal, @weight: normal, @size: 120%,
+             @line-h: 24px, @align: center, @clr: #FBFBFB, @z: 1);
+        }
+
+        &_desc {
+            .text(@style: normal, @weight: 300, @size: 80%,
+             @line-h: 17px, @align: center, @clr: #9f9f9f, @z: 1);
+        }
+
+    }
+
+  }
+
+
+  @media (max-width: 768px) {
+    .trigers {
+      padding: 48.16px 0 64px 0;
+
+      &_wrap {
+        flex-direction: column;
+        align-items:center
+      }
+
+      &_delivery {
+        margin-bottom: 48.37px;
+      }
+
+      &_discount {
+        margin-bottom: 48.37px;
+      }
+
+      &_general {
+        width: 300px;
+      }
+    }
+  }
