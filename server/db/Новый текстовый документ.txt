@@ -1,7 +1,0 @@
-{
-            "id_product": 1,
-            "product_name": "ELLERY X M'O CAPSULE",
-            "img_product": "images/photos/gallery_img1.jpg",
-            "price": 1200,
-            "quantity": 1
-        }
