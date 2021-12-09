@@ -1,0 +1,350 @@
+.cart {
+    width: 100%;
+    padding: 96px 0 128px 0;
+
+    &_wrap {
+        .wrapper(@width: 75%, @margin: 0 auto, @display: flex);
+        justify-content: space-between;
+    }
+
+    
+
+    &_name {
+        margin: 0 0 0 0;
+    }
+
+    &_type {
+        margin: 0 0 42px 0;
+    }
+
+    &_quantity_value {
+        width: 43.19px;
+        height: 24.12px;
+        margin: 0 0 0 40px;
+        padding: 0 0 0 16px;
+        box-sizing: border-box;
+        border: 1px solid #EAEAEA;
+        color: #656565;
+        outline: none;
+
+        &::placeholder {
+            color: #656565;
+        }
+    }
+
+    &_price span {
+        color: #F16D7F;
+
+        &:before {
+            content: '\0024';
+        }
+
+    }
+
+    
+    &_left {
+        width: 652px;
+        min-height: 652px;
+        box-sizing: border-box;
+
+        &_product {
+            display: flex;
+            box-sizing: border-box;
+            margin: 0 0 40px 0;
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+            height: 306px;
+
+            &_img {
+                width: 262px;
+                height: 306px;
+                background-color: #f7e4e2;
+                overflow: hidden;
+
+                & img {
+                  width: 262px;
+                }
+            }
+
+            &_desc {
+                padding: 22px 0 62px 31px;
+                box-sizing: border-box;
+            }
+
+            &_title {
+                .text(@style: normal, @weight: normal, @size: 24px, @line-h: 29px, @align: left, @clr: #222, @z: 1);
+                display: block;
+                text-transform: uppercase;
+            }
+
+            &_info {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 26px;
+                color: #575757;
+                display: block;
+                margin: 0 0 6px 0;
+            }
+
+            &_close {
+                width: 18px;
+                height: 18px;
+                border: none;
+                margin: 28px 0 0 135px;
+                background-image: url('../images/icons/hide_menu_close_btn.svg');
+                background-color: #FFF;
+                background-repeat: no-repeat;
+                background-position: center center;
+                cursor: pointer;
+            }
+        }
+
+
+        &_btn_box {
+           display: flex;
+           justify-content: space-between; 
+           margin: 72px 0 0 0;
+        }
+
+        &_btn {
+            width: 235px;
+            height: 50px;
+            background: #FFF;
+            border: 1px solid #A4A4A4;
+            .text(@style: normal, @weight: 300, @size: 14px, @line-h: 17px, @align: center, @clr: #A4A4A4, @z: 1);
+            cursor: pointer;
+            text-transform: uppercase;
+
+            &:hover {
+                background: #A4A4A4;
+                color: #FFF;
+            }
+
+            &:active {
+                background: #A4A4A4;
+                color: #FFF;
+            }
+        }
+    }
+
+    &_right {
+        &_title {
+            .text(@style: normal, @weight: 300, @size: 16px, @line-h: 19px, @align: left, @clr: #222, @z: 1);
+            text-transform: uppercase;
+            display: block;
+            margin: 0 0 20px 0;
+        }
+
+        &_form_input {
+            display: block;
+            width: 285px;
+            height: 44px;
+            margin: 0 0 21px 0;
+            border: 1px solid #A4A4A4;
+            color: #222;
+            outline: none;
+            padding-top: 1.5px;
+            padding-left: 16.73px;
+            box-sizing: border-box;
+        }
+
+        &_form_input::placeholder {
+            color: #222;
+        }
+
+        &_form_country::placeholder {
+            color: #B1B1B1;
+        }
+
+        &_form_btn {
+            width: 101.41px;
+            height: 35px;
+            .text(@style: normal, @weight: 300, @size: 11px, @line-h: 13px, @align: center, @clr: #4A4A4A, @z: 1);
+            text-transform: uppercase;
+            border: 1px solid #A4A4A4;
+            background: #FFF;
+            margin: 0 0 57.5px 0;
+
+            &:hover {
+                background: #A4A4A4; 
+                color: #FFF;
+            }
+
+            &:active {
+                background: #A4A4A4; 
+                color: #FFF;
+            }
+        }
+
+        &_form_total_info {
+            width: 285px;
+            background: #F5F3F3;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 39px 34px 42px 44px;
+            box-sizing: border-box;
+
+            &_sub {
+                .text(@style: normal, @weight: normal, @size: 11px, @line-h: 13px, @align: left, @clr: #4A4A4A, @z: 1);
+                text-transform: uppercase;
+                margin: 0 0 12px 0;
+            }
+
+            &_sub span:before {
+                content: '\0024';
+                margin: 0 0 0 30px;
+            }
+
+            &_grand {
+                .text(@style: normal, @weight: 300, @size: 16px, @line-h: 19px, @align: left, @clr: #222, @z: 1);
+                text-transform: uppercase;
+                margin: 0 0 21px 0;
+            }
+
+            &_grand span {
+                color: #F16D7F;
+            }
+
+            &_grand span:before {
+                content: '\0024';
+                margin: 0 0 0 30px;
+                color: #F16D7F;
+            }
+
+            &_hr {
+                width: 220px;
+                height: 1px;
+                background: #e2e2e2;
+                margin: 0 0 17px 0;
+                border: 0;
+            }
+
+            &_submit {
+                width: 220px;
+                height: 50px;
+                background: #F16D7F;
+                border: 1px solid #F16D7F;
+                .text(@style: normal, @weight: 300, @size: 16px, @line-h: 19px, @align: center, @clr: #FFF, @z: 1);
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                    background: #FFF;
+                    color: #F16D7F;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cart {
+      padding: 59px 0 0 0;
+    }
+  
+    .cart_wrap {
+      width: 100%;
+      padding: 0 16px 0 16px;
+      flex-direction: column;
+      box-sizing: border-box
+    }
+  
+    .cart_left {
+      width: 100%;
+      margin: 0 0 64px 0;
+    }
+  
+    .cart_left_btn_box {
+      justify-content: space-evenly;
+    }
+  
+    .cart_right {
+      position: relative
+    }
+  
+    .cart_right_form_input {
+      width: 54%;
+    }
+  
+    .cart_right_form_total_info {
+      position: absolute;
+      top: -30px;
+      right: 0;
+    }
+  
+  }
+
+  @media (max-width: 375px) {
+    .cart {
+      padding: 39px 0 0 0;
+    }
+  
+    .cart_wrap {
+      padding: 0 9px 0 9px;
+    }
+  
+    .cart_left {
+      margin: 0 0 48px 0;
+      min-height: 501px;
+    }
+  
+    .cart_left_product {
+      height: 188px;
+      box-shadow: 5px 8px 24px rgba(0, 0, 0, 13%);
+    }
+  
+    .cart_left_product_img {
+      width: 144px;
+      height: 100%;
+      background-size: cover;
+    }
+  
+    .cart_left_product_desc {
+      padding: 14px 25px 0 17px;
+    }
+  
+    .cart_left_product_title {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  
+    .cart_left_product_info  {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  
+    .cart_left_product_close {
+      margin: 13px 0 0 0;
+    }
+  
+    .cart_type {
+      margin: 0 0 25px 0;
+    }
+  
+    .cart_left_btn_box {
+      justify-content: space-between;
+    }
+  
+    .cart_left_btn {
+      width: 48%;
+      height: 35px;
+      font-size: 9px;
+      line-height: 14px;
+    }
+  
+    .cart_right_form_total_info {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  
+    .cart_right_form_input {
+      width: 100%;
+    }
+  
+    .cart_right_form_total_info {
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+  }

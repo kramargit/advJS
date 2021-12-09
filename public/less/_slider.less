@@ -1,0 +1,42 @@
+.slider {
+    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA;
+
+    .wrapper(@width: 100%, @margin: 0 auto, @display: flex);
+    min-height: @minh-slider;
+    background: @bg-slider;
+    justify-content: space-between;
+
+    &_btn {
+        width: 47px;
+        height: 47px;
+        border: none;
+        align-self: center;
+        cursor: pointer;
+
+        & img {
+            width: 12.4px;
+            height: 21.7px;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+@media (max-width: 375px) {
+    .slider {
+      margin: 0;
+      box-sizing: border-box;
+    }
+  
+    .slider_btn {
+      z-index: 1;
+    }
+  
+    .slider_img {
+      width: 100%;
+      margin-left: -47px;
+    }
+  
+  }
